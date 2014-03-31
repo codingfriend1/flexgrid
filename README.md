@@ -13,33 +13,34 @@ A css grid system and simple framework with some powerful jQuery helper function
 <h3>Grid</h3>
 
 	
-	a-1		d-1		t-1		m-1		one
-	a-2		d-2		t-2		m-2		two
-	a-3		d-3		t-3		m-3		three
-	a-4		d-4		t-4		m-4		four
-	a-5		d-5		t-5		m-5		five
-	a-6		d-6		t-6		m-6		six
-	a-7		d-7		t-7		m-7		seven
-	a-8		d-8		t-8		m-8		eight
-	a-9		d-9		t-9		m-9		nine
-	a-10	d-10	t-10	m-10	ten
-	a-11	d-11	t-11	m-11	eleven
-	a-12	d-12	t-12	m-12	twelve
-	a-20	d-20	t-20	m-20	twenty
-	a-40	d-40	t-40	m-40	fourty
-	a-60	d-60	t-60	m-60	sixty
-	a-80	d-80	t-80	m-80	eighty
+	a-1		d-1		t-1		h-1		m-1		c-1		one
+	a-2		d-2		t-2		h-2		m-2		c-2		two
+	a-3		d-3		t-3		h-3		m-3		c-3		three
+	a-4		d-4		t-4		h-4		m-4		c-4		four
+	a-5		d-5		t-5		h-5		m-5		c-5		five
+	a-6		d-6		t-6		h-6		m-6		c-6		six
+	a-7		d-7		t-7		h-7		m-7		c-7		seven
+	a-8		d-8		t-8		h-8		m-8		c-8		eight
+	a-9		d-9		t-9		h-9		m-9		c-9		nine
+	a-10	d-10	t-10	h-10	m-10	c-10	ten
+	a-11	d-11	t-11	h-11	m-11	c-11	eleven
+	a-12	d-12	t-12	h-12	m-12	c-12	twelve
+	a-20	d-20	t-20	h-20	m-20	c-20	twenty
+	a-40	d-40	t-40	h-40	m-40	c-40	fourty
+	a-60	d-60	t-60	h-60	m-60	c-60	sixty
+	a-80	d-80	t-80	h-80	m-80	c-80	eighty
 	
 	Grid elements are classes defined by certain screen sizes
 	Ex: d-4, a-2, m-5, h-6, seven...
 	
-	
+		a = all
 		d = desktop
 		t = tablet
 		h = handheld
 		m = mobile 
 		c = cell
-		a = all
+		words = desktop and tablet
+		
 	
 	
 	written numbers ex: "seven", "four", "twelve" apply to both tablet and desktop screen sizes
