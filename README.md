@@ -130,7 +130,9 @@ A css grid system and simple framework with some powerful jQuery helper function
 			.float-left 	{float: left;}
 		
 
-		These classes only affect CHILDREN of the element that has the class. So if you wanted a grid element inside of it's parent to be moved to the right, you would add .right to the parent element. For .middle to work, at least two columns on the same row have to both be set to .middle
+		These classes only affect CHILDREN of the element that has the class. 
+		So if you wanted a grid element inside of it's parent to be moved to the right, you would add .right to the parent element. 
+		For .middle to work, at least two columns on the same row have to both be set to .middle
 		These can be attached only to certain screen sizes if you specify one of the screen sizes...
 
 		
