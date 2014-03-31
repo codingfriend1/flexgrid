@@ -150,5 +150,4 @@ A css grid system and simple framework with some powerful jQuery helper function
 
 	<link rel="stylesheet" type="text/css" href="flexgrid.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="jquery-1.10.2.min.js"></script>
 	<script src="flexgrid.js"></script>
