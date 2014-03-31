@@ -10,8 +10,15 @@ A css grid system and simple framework with some powerful jQuery helper function
 <p><strong>Description:</strong> Flexgrid is a 12 column & 5 column responsive fluid grid system with a few extra jQuery functions that are helpful in creating layouts. Columns can be infinitely nested.</p>
 
 
-<h3>Grid</h3>
-
+<h3>Grid Classes</h3>
+	
+	a = all
+	d = desktop
+	t = tablet
+	h = handheld
+	m = mobile 
+	c = cell
+	words = desktop and tablet
 	
 	a-1		d-1		t-1		h-1		m-1		c-1		one
 	a-2		d-2		t-2		h-2		m-2		c-2		two
@@ -30,27 +37,9 @@ A css grid system and simple framework with some powerful jQuery helper function
 	a-60	d-60	t-60	h-60	m-60	c-60	sixty
 	a-80	d-80	t-80	h-80	m-80	c-80	eighty
 	
-	Grid elements are classes defined by certain screen sizes
-	Ex: d-4, a-2, m-5, h-6, seven...
-	
-		a = all
-		d = desktop
-		t = tablet
-		h = handheld
-		m = mobile 
-		c = cell
-		words = desktop and tablet
-		
 	
 	
-	written numbers ex: "seven", "four", "twelve" apply to both tablet and desktop screen sizes
-	
-	
-		h = handheld
-		c = cell
-	
-	
-	H and C are override classes. If the jump in layout between tablet and mobile or mobile and smaller mobile (c) is too great, H and C are inbetween classes that help smooth the transition.
+	Handheld and Cell are override classes. If the jump in layout between tablet and mobile or mobile and smaller mobile (c) is too great, H and C are inbetween classes that help smooth the transition.
 	
 	For instance, tablets apply to the screen sizes between 640 and 960px. 
 	Handhelds apply to 640 to 768px. So whatever rules are in the handhelds class will override the tablet rules during that fraction of a screen size. 
@@ -58,7 +47,7 @@ A css grid system and simple framework with some powerful jQuery helper function
 	
 	Grid classes can override other grid classes.
 		a-4 will make the column 1/3rd width for all screen sizes. 
-		But if you also apply a t-6 class, then it will be 1/3rd 	width for all screen sizes except for tablet in which it would be 50%.
+		But if you also apply a t-6 class, then it will be 1/3rd width for all screen sizes except for tablet in which it would be 50%.
 	
 	Ex: "three t-4 m-6 c-12" 
 	This will result in desktop being 25%, tablet being 33.33%, mobile being 50%, and cell being 100%
