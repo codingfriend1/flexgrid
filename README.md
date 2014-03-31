@@ -148,7 +148,7 @@ A css grid system and simple framework with some powerful jQuery helper function
 			
 <h3>To apply flexgrid download and attach links and then apply the correct classes</h3>
 
-	<link rel="stylesheet" type="text/css" href="flexgrid-production.css">
+	<link rel="stylesheet" type="text/css" href="flexgrid.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="jquery-1.10.2.min.js"></script>
-	<script src="flexgrid-production.js"></script>
+	<script src="flexgrid.js"></script>
