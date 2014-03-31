@@ -31,7 +31,7 @@ A css grid system and simple framework with some powerful jQuery helper function
 		a-80
 	
 	Grid elements are classes defined by certain screen sizes
-	<p>Ex: d-4, a-2, m-5, h-6, seven...</p>
+	Ex: d-4, a-2, m-5, h-6, seven...
 	
 	
 		d = desktop
@@ -42,22 +42,22 @@ A css grid system and simple framework with some powerful jQuery helper function
 		a = all
 	
 	
-	<p>written numbers ex: "seven", "four", "twelve" apply to both tablet and desktop screen sizes</p>
+	written numbers ex: "seven", "four", "twelve" apply to both tablet and desktop screen sizes
 	
 	
 		h = handheld
 		c = cell
 	
 	
-	<p>H and C are override classes. If the jump in layout between tablet and mobile or mobile and smaller mobile (c) is too great, H and C are inbetween classes that help smooth the transition.</p>
+	H and C are override classes. If the jump in layout between tablet and mobile or mobile and smaller mobile (c) is too great, H and C are inbetween classes that help smooth the transition.
 	
-	<p>For instance, tablets apply to the screen sizes between 640 and 960px. Handhelds apply to 640 to 768px. So whatever rules are in the handhelds class will override the tablet rules during that fraction of a screen size.Mobile is from 640 below, while cell is from 480px and below.</p>
+	For instance, tablets apply to the screen sizes between 640 and 960px. Handhelds apply to 640 to 768px. So whatever rules are in the handhelds class will override the tablet rules during that fraction of a screen size.Mobile is from 640 below, while cell is from 480px and below.
 	
-	<p>Grid classes can override other grid classes.
-		a-4 will make the column 1/3rd width for all screen sizes. But if you also apply a t-6 class, then it will be 1/3rd 	width for all screen sizes except for tablet in which it would be 50%.</p>
+	Grid classes can override other grid classes.
+		a-4 will make the column 1/3rd width for all screen sizes. But if you also apply a t-6 class, then it will be 1/3rd 	width for all screen sizes except for tablet in which it would be 50%.
 	
-	<p>Ex: "three t-4 m-6 c-12" </p>
-	<p>This will result in desktop being 25%, tablet being 33.33%, mobile being 50%, and cell being 100%</p>
+	Ex: "three t-4 m-6 c-12" 
+	This will result in desktop being 25%, tablet being 33.33%, mobile being 50%, and cell being 100%
 
 
 <h3>Basic jQuery helper functions:</h3>
