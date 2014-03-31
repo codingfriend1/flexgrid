@@ -141,3 +141,9 @@ A css grid system and simple framework with some powerful jQuery helper function
 	<link rel="stylesheet" type="text/css" href="flexgrid.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="flexgrid.js"></script>
+
+<h3>If you wish, I'm offering my grid on my server as somewhat of a CDN. However, this will change in the future and any projects you use this link to will not work. I recommend it only for quick testing.</h3>
+
+	<link rel="stylesheet" type="text/css" href="http://jonpaulmiles.info/flexgrid-production/flexgrid.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://jonpaulmiles.info/flexgrid-production/flexgrid.js"></script>
