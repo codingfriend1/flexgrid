@@ -59,8 +59,8 @@ measure()
 elementOrdering()
 	Reorders elements in the page at certain screen sizes. This is achieved by adding classes to the elements.
 	Ex:
-		<div class="a-6 m-position-2">1</div>
-		<div class="a-6 m-position-1">2</div>
+		&lt;div class="a-6 m-position-2"&gt;1&lt;/div&gt;
+		&lt;div class="a-6 m-position-1"&gt;2&lt;/div&gt;
 	At mobile sizes the m-position-2 will be inserted after m-position-1. Elements are only reordered within the same parent. t-position-... and d-position-... may also be specified.
 
 responsiveMargins()
