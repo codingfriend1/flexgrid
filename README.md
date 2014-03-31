@@ -51,10 +51,13 @@ A css grid system and simple framework with some powerful jQuery helper function
 	
 	H and C are override classes. If the jump in layout between tablet and mobile or mobile and smaller mobile (c) is too great, H and C are inbetween classes that help smooth the transition.
 	
-	For instance, tablets apply to the screen sizes between 640 and 960px. Handhelds apply to 640 to 768px. So whatever rules are in the handhelds class will override the tablet rules during that fraction of a screen size.Mobile is from 640 below, while cell is from 480px and below.
+	For instance, tablets apply to the screen sizes between 640 and 960px. 
+	Handhelds apply to 640 to 768px. So whatever rules are in the handhelds class will override the tablet rules during that fraction of a screen size. 
+	Mobile is from 640 below, while cell is from 480px and below.
 	
 	Grid classes can override other grid classes.
-		a-4 will make the column 1/3rd width for all screen sizes. But if you also apply a t-6 class, then it will be 1/3rd 	width for all screen sizes except for tablet in which it would be 50%.
+		a-4 will make the column 1/3rd width for all screen sizes. 
+		But if you also apply a t-6 class, then it will be 1/3rd 	width for all screen sizes except for tablet in which it would be 50%.
 	
 	Ex: "three t-4 m-6 c-12" 
 	This will result in desktop being 25%, tablet being 33.33%, mobile being 50%, and cell being 100%
@@ -76,12 +79,12 @@ A css grid system and simple framework with some powerful jQuery helper function
 <dt>measure()</dt>
 	<dd>measure() returns the width of a portion of any element in either px, ems, or %. You can measure margin-box (the full width including margins), border-box, padding-box, content-box, margins (both right and left), borders, padding, margin-right, margin-left, padding-right, border-left, etc... This function is called like so
 		
-		<p>$(element).measure('border-box', %);</p>
+		<p>$(element).measure('border-box', '%');</p>
 			<p>returns a number without the string type added on</p>
 		
 		<p>Percentage measurements are not always very accurate, so measure() rounds the percentage returns to the nearest column width if within 0.5% tolerance as defined by an array that can be passed into the third argument.</p>
 		
-		<p>$(element).measure('border-box', %, [33.33, 50, 66.66]);</p>
+		<p>$(element).measure('border-box', '%', [33.33, 50, 66.66]);</p>
 		
 		<p>
 			If an percentage measurement turns out to be 33.29 it will round to 33.33% instead. If the % was instead to far away such as 30.25% then it will not round.</dd>
