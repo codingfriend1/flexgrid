@@ -145,3 +145,10 @@ A css grid system and simple framework with some powerful jQuery helper function
 			.d-bottom 		{vertical-align: bottom;}
 			.d-float-right	{float: right;}
 			.d-float-left 	{float: left;}
+			
+<h3>To apply flexgrid just add the links and then apply the correct classes</h3>
+
+	&gt;link rel="stylesheet" type="text/css" href="flexgrid-production.css"&lt;
+	&gt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&lt;&gt;/script&lt;
+	&gt;script src="jquery-1.10.2.min.js"&lt;&gt;/script&lt;
+	&gt;script src="flexgrid-production.js"&lt;&gt;/script&lt;
