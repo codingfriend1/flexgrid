@@ -285,18 +285,21 @@ function responsiveVideo(container) {
 //Reads the current right and left margin values for any element and subtracts those values from the overall width using calc(). Kind of like how you would expect "box-sizing: margin-box;" to work but only for right and left margins
 function responsiveMargins(container) {
     var percent, margins, marginRight, marginLeft, calc, isWebKit;
-    jQuery(container).css({'width': '', 'margin-left': '', 'margin-right': ''});
+    jQuery(container).css('width', '');
     jQuery(container).each(function() {
-        percent = jQuery(this).measure('border-box', '%');
         margins = jQuery(this).measure('margins', 'em');
-        marginRight = jQuery(this).measure('margin-right', 'em');
-        marginLeft = jQuery(this).measure('margin-left', 'em');
-        calc = 'calc('+ percent + '% - ' + margins + 'em)';
-        isWebKit = 'WebkitAppearance' in document.documentElement.style;
-        if (isWebKit) {
-          calc = "-webkit-"+calc;
+        if(margins != 0) {
+            percent = jQuery(this).measure('border-box', '%');
+            marginRight = jQuery(this).measure('margin-right', 'em');
+            marginLeft = jQuery(this).measure('margin-left', 'em');
+            calc = 'calc('+ percent + '% - ' + margins + 'em)';
+            isWebKit = 'WebkitAppearance' in document.documentElement.style;
+            if (isWebKit) {
+              calc = "-webkit-"+calc;
+            }
+            jQuery(this).css('width', calc);
         }
-        jQuery(this).css('width', calc);
+        
     });
 }
 
