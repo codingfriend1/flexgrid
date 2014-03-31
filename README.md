@@ -13,22 +13,22 @@ A css grid system and simple framework with some powerful jQuery helper function
 <h3>Grid</h3>
 
 	
-		a-1
-		a-2
-		a-3
-		a-4
-		a-5
-		a-6
-		a-7
-		a-8
-		a-9
-		a-10
-		a-11
-		a-12
-		a-20
-		a-40
-		a-60
-		a-80
+	a-1		d-1		t-1		m-1		one
+	a-2		d-2		t-2		m-2		two
+	a-3		d-3		t-3		m-3		three
+	a-4		d-4		t-4		m-4		four
+	a-5		d-5		t-5		m-5		five
+	a-6		d-6		t-6		m-6		six
+	a-7		d-7		t-7		m-7		seven
+	a-8		d-8		t-8		m-8		eight
+	a-9		d-9		t-9		m-9		nine
+	a-10	d-10	t-10	m-10	ten
+	a-11	d-11	t-11	m-11	eleven
+	a-12	d-12	t-12	m-12	twelve
+	a-20	d-20	t-20	m-20	twenty
+	a-40	d-40	t-40	m-40	fourty
+	a-60	d-60	t-60	m-60	sixty
+	a-80	d-80	t-80	m-80	eighty
 	
 	Grid elements are classes defined by certain screen sizes
 	Ex: d-4, a-2, m-5, h-6, seven...
@@ -145,8 +145,8 @@ A css grid system and simple framework with some powerful jQuery helper function
 			.d-bottom 		{vertical-align: bottom;}
 			.d-float-right	{float: right;}
 			.d-float-left 	{float: left;}
-			
-<h3>To apply flexgrid download and attach links and then apply the correct classes</h3>
+
+<h3>To apply flexgrid just add the links and then apply the correct classes</h3>
 
 	<link rel="stylesheet" type="text/css" href="flexgrid.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
