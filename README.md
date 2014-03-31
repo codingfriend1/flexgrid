@@ -1,4 +1,4 @@
-flexgrid
+Flexgrid
 ========
 
 A css grid system and simple framework with some powerful jQuery helper functions
@@ -12,42 +12,42 @@ A css grid system and simple framework with some powerful jQuery helper function
 
 <h3>Grid</h3>
 
-	<ul>
-		<li>a-1</li>
-		<li>a-2</li>
-		<li>a-3</li>
-		<li>a-4</li>
-		<li>a-5</li>
-		<li>a-6</li>
-		<li>a-7</li>
-		<li>a-8</li>
-		<li>a-9</li>
-		<li>a-10</li>
-		<li>a-11</li>
-		<li>a-12</li>
-		<li>a-20</li>
-		<li>a-40</li>
-		<li>a-60</li>
-		<li>a-80</li>
-	</ul>
+	
+		a-1
+		a-2
+		a-3
+		a-4
+		a-5
+		a-6
+		a-7
+		a-8
+		a-9
+		a-10
+		a-11
+		a-12
+		a-20
+		a-40
+		a-60
+		a-80
+	
 	Grid elements are classes defined by certain screen sizes
 	<p>Ex: d-4, a-2, m-5, h-6, seven...</p>
 	
-	<ul>
-		<li>d = desktop</li>
-		<li>t = tablet</li>
-		<li>h = handheld</li>
-		<li>m = mobile </li>
-		<li>c = cell</li>
-		<li>a = all</li>
-	</ul>
+	
+		d = desktop
+		t = tablet
+		h = handheld
+		m = mobile 
+		c = cell
+		a = all
+	
 	
 	<p>written numbers ex: "seven", "four", "twelve" apply to both tablet and desktop screen sizes</p>
 	
-	<ul>
-		<li>h = handheld</li>
-		<li>c = cell</li>
-	</ul>
+	
+		h = handheld
+		c = cell
+	
 	
 	<p>H and C are override classes. If the jump in layout between tablet and mobile or mobile and smaller mobile (c) is too great, H and C are inbetween classes that help smooth the transition.</p>
 	
@@ -61,13 +61,13 @@ A css grid system and simple framework with some powerful jQuery helper function
 
 
 <h3>Basic jQuery helper functions:</h3>
-	<ul>
-		<li>equalHeights()</li>
-		<li>measure()</li>
-		<li>elementOrdering()</li>
-		<li>responsiveMargins()</li>
-		<li>responsiveVideo()</li>
-	</ul>
+	
+		equalHeights()
+		measure()
+		elementOrdering()
+		responsiveMargins()
+		responsiveVideo()
+	
 
 <dl>
 <dt>equalHeights()</dt>
@@ -108,36 +108,35 @@ A css grid system and simple framework with some powerful jQuery helper function
 <h3>Other Helpful classes</h3>
 
 	Flexgrid allows you to toggle display of elements based on screen size by adding classes such as:
-		<ul>
-			<li>desktop-only</li>
-			<li>mobile-only</li>
-			<li>tablet-hide</li>
-		</ul>
+		
+			desktop-only
+			mobile-only
+			tablet-hide
+		
 
 	Since Flexgrid is defined in inline-block, you may change the alignment of the grid items.
-		<ul>
-			<li>.center 		{text-align: center;}</li>
-			<li>.right			{text-align: right}</li>
-			<li>.left			{text-align: left;}</li>
-			<li>.justify 		{text-align: justify;}</li>
-			<li>.top 			{vertical-align: top;}</li>
-			<li>.middle 		{vertical-align: middle;}</li>
-			<li>.bottom 		{vertical-align: bottom;}</li>
-			<li>.float-right	{float: right;}</li>
-			<li>.float-left 	{float: left;}</li>
-		</ul>
+		
+			.center 		{text-align: center;}
+			.right			{text-align: right}
+			.left			{text-align: left;}
+			.justify 		{text-align: justify;}
+			.top 			{vertical-align: top;}
+			.middle 		{vertical-align: middle;}
+			.bottom 		{vertical-align: bottom;}
+			.float-right	{float: right;}
+			.float-left 	{float: left;}
+		
 
 		These classes only affect CHILDREN of the element that has the class. So if you wanted a grid element inside of it's parent to be moved to the right, you would add .right to the parent element. For .middle to work, at least two columns on the same row have to both be set to .middle
 		These can be attached only to certain screen sizes if you specify one of the screen sizes...
 
-		<ul>
-			<li>.d-center 		{text-align: center;}</li>
-			<li>.d-right		{text-align: right}</li>
-			<li>.d-left			{text-align: left;}</li>
-			<li>.d-justify 		{text-align: justify;}</li>
-			<li>.d-top 			{vertical-align: top;}</li>
-			<li>.d-middle 		{vertical-align: middle;}</li>
-			<li>.d-bottom 		{vertical-align: bottom;}</li>
-			<li>.d-float-right	{float: right;}</li>
-			<li>.d-float-left 	{float: left;}</li>
-		</ul>
+		
+			.d-center 		{text-align: center;}
+			.d-right		{text-align: right}
+			.d-left			{text-align: left;}
+			.d-justify 		{text-align: justify;}
+			.d-top 			{vertical-align: top;}
+			.d-middle 		{vertical-align: middle;}
+			.d-bottom 		{vertical-align: bottom;}
+			.d-float-right	{float: right;}
+			.d-float-left 	{float: left;}
