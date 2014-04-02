@@ -52,13 +52,24 @@ A css grid system and simple framework with some powerful jQuery helper function
 	Ex: "three t-4 m-6 c-12" 
 	This will result in desktop being 25%, tablet being 33.33%, mobile being 50%, and cell being 100%
 
+<h3>.inner</h3>
+	<p>All elements with flexgrid classes cannot have margins changed. If you wish to change the margin of a flexgrid container you should wrap a div directly inside of the that element and apply your margins and styling to that div. If you add the class .inner to it, then it will stretch to fill the height of it's parent container. Each parent may only have one .inner child container, having more will cause a glitch.</p>
+
+	<p>Ex:</p>
+	<p>
+		<div class="four m-6 c-12">
+			<div class="inner your-class-name">
+				Content Here
+			</div>
+		</div>
+	</p>
+
 
 <h3>Basic jQuery helper functions:</h3>
 	
 		equalHeights()
 		measure()
 		elementOrdering()
-		responsiveMargins()
 		responsiveVideo()
 	
 
@@ -86,13 +97,6 @@ A css grid system and simple framework with some powerful jQuery helper function
 			<p>&lt;div class="a-6 m-position-2"&gt;1&lt;/div&gt; <br>
 				&lt;div class="a-6 m-position-1"&gt;2&lt;/div&gt;</p>
 		At mobile sizes the m-position-2 will be inserted after m-position-1. Elements are only reordered within the same parent. t-position-... and d-position-... may also be specified.</dd>
-
-<dt>responsiveMargins()</dt>
-	<dd>Retrieves the right and left margins set in the style sheet for any grid element and subtracts their width from the overall percentage width of the grid element using calc().
-		<p>For instance, you have a grid element that is 33.33% (four) width and in your stylesheet you've added 1em of right and left margin. responsiveMargins() will add calc(33.33% - 2em) to that element.</p>
-		
-		<p>This just means that you can set any grid element to any margin you want in your stylesheet and not have to worry about collapsing the grid. However, marigins must be set in either px or em. If you try to set margins in %, the grid will collapse. Also grid elements are measured in border-box so you may add padding and borders without breaking the grid too.</p>
-		</dd>
 
 <dt>responsiveVideo()</dt>
 	<dd>Wraps video in a container that allows you to scale video in responsive layouts</dd>
@@ -144,6 +148,6 @@ A css grid system and simple framework with some powerful jQuery helper function
 
 <h3>If you wish, I'm offering my grid on my server as somewhat of a CDN. However, this will change in the future and any projects you use this link to will not work. I recommend it only for quick testing.</h3>
 
-	<link rel="stylesheet" type="text/css" href="http://jonpaulmiles.info/flexgrid-production/flexgrid.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://jonpaulmiles.info/flexgrid-production/flexgrid.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://jonpaulmiles.info/flexgrid-inner/flexgrid.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://jonpaulmiles.info/flexgrid-inner/flexgrid.min.js"></script>
