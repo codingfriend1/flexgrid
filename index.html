@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="flexgrid.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="flexgrid.min.js"></script>
+	 <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<style type="text/css">
+		 .box {border: 1px solid black; padding: 1em; margin: 1em;}
+		.boxes {border: 1px solid black; padding: 1em;}
+	</style>
+</head>
+<body class="equal">
+	<div class="a-12">
+		<div class="inner box">
+			<h1>Headline</h1>
+		</div>
+	</div>
+	<div class="four d-position-3 t-position-3">
+		<div class="inner box">
+			<h3>Point 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis neque architecto perferendis possimus nostrum vero distinctio. Molestias, nisi, sunt, magnam, nihil quam eaque tempore dolor possimus quis recusandae qui excepturi!</p>
+		</div>
+	</div>
+	<div class="four d-position-2 t-position-2">
+		<div class="inner box">
+			<h3>Point 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, autem!</p>
+		</div>
+	</div>
+	<div class="four d-position-1 t-position-1">
+		<div class="inner box">
+			<h3>Point 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis neque architecto perferendis possimus nostrum vero distinctio. Molestias, nisi, sunt, magnam, nihil quam eaque tempore dolor possimus quis recusandae qui excepturi!</p>
+		</div>
+	</div>
+
+	<div class="six"><div class="inner box">Six</div></div>
+	<div class="six"><div class="inner box">Six</div></div>
+
+	<div class="six">
+		<div class="inner box">
+			<div class="six"><div class="inner box">twelve</div></div>
+			<div class="six"><div class="inner box">Six</div></div>
+		</div>
+	</div>
+	<div class="six equal">
+		<div class="inner box equal">
+			<div class="a-6 d-position-2"><div class="inner box">Position 1</div></div>
+			<div class="a-6 d-position-1"><div class="inner box">Position 2</div></div>
+		</div>
+	</div>
+
+</body>
+</html>
