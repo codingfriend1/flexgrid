@@ -53,9 +53,10 @@ A css grid system and simple framework with some powerful jQuery helper function
 	This will result in desktop being 25%, tablet being 33.33%, mobile being 50%, and cell being 100%
 
 <h3>.inner</h3>
-	<p>All elements with flexgrid classes cannot have margins changed. If you wish to change the margin of a flexgrid container you should wrap a div directly inside of the that element and apply your margins and styling to that div. If you add the class .inner to it, then it will stretch to fill the height of it's parent container. Each parent may only have one .inner child container, having more will cause a glitch.</p>
+	All elements with flexgrid classes cannot have margins changed. If you wish to change the margin of a flexgrid container you should wrap a div directly inside of the that element and apply your margins and styling to that div. If you add the class .inner to it, then it will stretch to fill the height of it's parent container. Each parent may only have one .inner child container, having more will cause a glitch.
 
-	<p>Ex:</p>
+	Ex:
+	
 	<p>
 		<div class="four m-6 c-12">
 			<div class="inner your-class-name">
