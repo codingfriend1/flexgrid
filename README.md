@@ -150,8 +150,8 @@ A css grid system and simple framework with some powerful jQuery helper function
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="flexgrid.js"></script>
 
-<h3>If you wish, I'm offering my grid on my server as somewhat of a CDN. However, this will change in the future and any projects you use this link to will not work. I recommend it only for quick testing.</h3>
+<h3>Flexgrid is now on jsDelivr CDN, just add these links to your html</h3>
 
-	<link rel="stylesheet" type="text/css" href="http://jonpaulmiles.info/flexgrid-inner/flexgrid.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.0/flexgrid.min.css">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://jonpaulmiles.info/flexgrid-inner/flexgrid.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/flexgrid/1.0/flexgrid.min.js"></script>

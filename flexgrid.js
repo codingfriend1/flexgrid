@@ -149,7 +149,7 @@ function preserveOrder(parent) {
         el = jQuery(this);
         el.children().each(function(i) {
             i++;
-            el.find('> .o' + (i+1)).insertAfter(el.find('> .o' + i));
+            el.find('> .o' + i).insertAfter(el.find('> .o' + (i-1)));
         });
     });
 }
@@ -159,9 +159,12 @@ function elementOrdering(orderingColumn, screenSize) {
     var el, screenSize = screenSize || 'reset';
     
     function resetOrder() {
+        el.children('.o1').insertBefore(el.children().first());
         el.children().each(function(i){
             i++;
-            el.find('> .o' + (i+1)).insertAfter(el.find('> .o' + i));
+            if(!jQuery(this).hasClass('o' + i)) {
+                el.find('> .o' + (i+1)).insertAfter(el.find('> .o' + i));
+            }
         });
     }
 
@@ -232,12 +235,16 @@ function equalheights(equal){
 
     function setHeights() {
         $.each(onSameRow, function(current, element) {
-            element.outerHeight(tallest); //For every container on the same row, set the height to the tallest column
+            if(element.outerHeight() != tallest) {
+                element.outerHeight(tallest); //For every container on the same row, set the height to the tallest column
+            }
             if(element.children().hasClass('inner')) {
-                marginTop = parseFloat(element.children('.inner').css('margin-top'));
-                marginBottom = parseFloat(element.children('.inner').css('margin-bottom'));
-                verticalMargins = marginTop + marginBottom;
-                element.children('.inner').outerHeight(element.height() - verticalMargins);
+                if(element.children('.inner').outerHeight(true) != element.height()) {
+                    marginTop = parseFloat(element.children('.inner').css('margin-top'));
+                    marginBottom = parseFloat(element.children('.inner').css('margin-bottom'));
+                    verticalMargins = marginTop + marginBottom;
+                    element.children('.inner').outerHeight(element.height() - verticalMargins);
+                }
             }
         });
         tallest = -1; //Reset Height for next row
