@@ -152,6 +152,6 @@ A css grid system and simple framework with some powerful jQuery helper function
 
 <h3>Flexgrid is now on jsDelivr CDN, just add these links to your html</h3>
 
-	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.0/flexgrid.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.2/flexgrid.min.css">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://cdn.jsdelivr.net/flexgrid/1.0/flexgrid.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/flexgrid/1.2/flexgrid.min.js"></script>
