@@ -109,11 +109,11 @@
 
 (function( $ ) {
 // Global Variables
-var gridClasses = '.a-1,.a-2,.a-3,.a-4,.a-5,.a-6,.a-7,.a-8,.a-9,.a-10,.a-11,.a-12,.a-20,.a-40,.a-60,.a-80,.d-1,.d-2,.d-3,.d-4,.d-5,.d-6,.d-7,.d-8,.d-9,.d-10,.d-11,.d-12,.d-20,.d-40,.d-60,.d-80,.t-1,.t-2,.t-3,.t-4,.t-5,.t-6,.t-7,.t-8,.t-9,.t-10,.t-11,.t-12,.t-20,.t-40,.t-60,.t-80,.m-1,.m-2,.m-3,.m-4,.m-5,.m-6,.m-7,.m-8,.m-9,.m-10,.m-11,.m-12,.m-20,.m-40,.m-60,.m-80,.c-1,.c-2,.c-3,.c-4,.c-5,.c-6,.c-7,.c-8,.c-9,.c-10,.c-11,.c-12,.c-20,.c-40,.c-60,.c-80,.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve,.twenty,.fourty,.sixty,.eighty,.fg';
-var orderingClasses = '.m-position-0,.m-position-1,.m-position-2,.m-position-3,.m-position-4,.m-position-5,.m-position-6,.m-position-7,.m-position-8,.m-position-9,.m-position-10,.m-position-11,.m-position-12,.m-position-13,.m-position-14,.m-position-15,.m-position-16,.m-position-17,.m-position-18,.m-position-19,.m-position-20,.t-position-0,.t-position-1,.t-position-2,.t-position-3,.t-position-4,.t-position-5,.t-position-6,.t-position-7,.t-position-8,.t-position-9,.t-position-10,.t-position-11,.t-position-12,.t-position-13,.t-position-14,.t-position-15,.t-position-16,.t-position-17,.t-position-18,.t-position-19,.t-position-20,.d-position-0,.d-position-1,.d-position-2,.d-position-3,.d-position-4,.d-position-5,.d-position-6,.d-position-7,.d-position-8,.d-position-9,.d-position-10,.d-position-11,.d-position-12,.d-position-13,.d-position-14,.d-position-15,.d-position-16,.d-position-17,.d-position-18,.d-position-19,.d-position-20';
-var videoTypes = 'iframe[src*="youtube"],iframe[src*="vimeo"],object,embed';
-var screenSize;
-
+var m = 'm-position-', t = 't-position-', d = 'd-position';
+var gridClasses = '.a-1,.a-2,.a-3,.a-4,.a-5,.a-6,.a-7,.a-8,.a-9,.a-10,.a-11,.a-12,.a-20,.a-40,.a-60,.a-80,.d-1,.d-2,.d-3,.d-4,.d-5,.d-6,.d-7,.d-8,.d-9,.d-10,.d-11,.d-12,.d-20,.d-40,.d-60,.d-80,.t-1,.t-2,.t-3,.t-4,.t-5,.t-6,.t-7,.t-8,.t-9,.t-10,.t-11,.t-12,.t-20,.t-40,.t-60,.t-80,.m-1,.m-2,.m-3,.m-4,.m-5,.m-6,.m-7,.m-8,.m-9,.m-10,.m-11,.m-12,.m-20,.m-40,.m-60,.m-80,.c-1,.c-2,.c-3,.c-4,.c-5,.c-6,.c-7,.c-8,.c-9,.c-10,.c-11,.c-12,.c-20,.c-40,.c-60,.c-80,.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve,.twenty,.fourty,.sixty,.eighty,.fg',
+    orderingClasses = m + '0,' + m + '1,' + m + '2,' + m + '3,' + m + '4,' + m + '5,' + m + '6,' + m + '7,' + m + '8,' + m + '9,' + m + '10,' + m + '11,' + m + '12,' + m + '13,' + m + '14,' + m + '15,' + m + '16,' + m + '17,' + m + '18,' + m + '19,' + m + '20,' + t + '0,' + t + '1,' + t + '2,' + t + '3,' + t + '4,' + t + '5,' + t + '6,' + t + '7,' + t + '8,' + t + '9,' + t + '10,' + t + '11,' + t + '12,' + t + '13,' + t + '14,' + t + '15,' + t + '16,' + t + '17,' + t + '18,' + t + '19,' + t + '20,' + d + '0,' + d + '1,' + d + '2,' + d + '3,' + d + '4,' + d + '5,' + d + '6,' + d + '7,' + d + '8,' + d + '9,' + d + '10,' + d + '11,' + d + '12,' + d + '13,' + d + '14,' + d + '15,' + d + '16,' + d + '17,' + d + '18,' + d + '19,' + d + '20',
+    videoTypes = 'iframe[src*="youtube"],iframe[src*="vimeo"],object,embed', 
+    screenSize;
 //Adds .parent class to parents of Flexgrid containers in order to cycle through them in a controlled manner later
 function addParent(container) {
     var gridParent;
@@ -160,7 +160,7 @@ function elementOrdering(orderingColumn, screenSize) {
     var el, screenSize = screenSize || 'reset';
     
     function resetOrder() {
-        el.children().filter(function() { return jQuery.data(this, "index"); }).each(function(i) {
+        el.children().filter(function() { return jQuery.data(this, "index"); }).each(function() {
             if(jQuery(this).data('index') == 1) {
                 jQuery(this).insertBefore(el.children().eq(jQuery(this).data('index')+1));
             } else {
