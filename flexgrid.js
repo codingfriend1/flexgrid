@@ -139,18 +139,19 @@ function addOrderingColumn(containers) {
 function preserveOrder(parent) {
     var el, parent = jQuery(parent);
     parent.each(function() {
-        jQuery(this).children().each(function(i, child) {
-            i++;
-            jQuery(child).addClass('o' + i);
+        jQuery(this).children(orderingClasses).each(function() {
+            jQuery(this).data('index', jQuery(this).index());
         });
     });
+}
 
+function removeWhiteSpace(parent) {
+    var el, parent = jQuery(parent)
     parent.each(function() {
-        el = jQuery(this);
-        el.children().each(function(i) {
-            i++;
-            el.find('> .o' + i).insertAfter(el.find('> .o' + (i-1)));
-        });
+        el = jQuery(this).children();
+        for(i=1;i<el.length;i++) {
+            el.eq(i).insertAfter(el.eq(i-1));
+        }
     });
 }
 
@@ -159,12 +160,12 @@ function elementOrdering(orderingColumn, screenSize) {
     var el, screenSize = screenSize || 'reset';
     
     function resetOrder() {
-        el.children('.o1').insertBefore(el.children().first());
-        el.children().each(function(i){
-            i++;
-            if(!jQuery(this).hasClass('o' + i)) {
-                el.find('> .o' + (i+1)).insertAfter(el.find('> .o' + i));
-            }
+        el.children().filter(function() { return jQuery.data(this, "index"); }).each(function(i) {
+            if(jQuery(this).data('index') == 1) {
+                jQuery(this).insertBefore(el.children().eq(jQuery(this).data('index')+1));
+            } else {
+                jQuery(this).insertAfter(el.children().eq(jQuery(this).data('index')-1));
+            }  
         });
     }
 
@@ -325,8 +326,9 @@ jQuery(document).ready(function() {
     addParent(gridClasses);
     wrapVideo(videoTypes);
     responsiveVideo('.responsive-container');
-    preserveOrder('.parent');
+    removeWhiteSpace('.parent');
     addOrderingColumn(orderingClasses);
+    preserveOrder('.ordering-column');
     changeDevices();
     equalheights('.equal');
 
