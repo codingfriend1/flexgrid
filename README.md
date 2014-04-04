@@ -3,20 +3,11 @@ Flexgrid
 
 A css grid system and simple framework with some powerful jQuery helper functions
 
-<h4>by Jon Paul Miles</h4>
-
-<a href="http://jonpaulmiles.info/flexgrid-inner/">Click Here to See a Demo</a>
+<h4>Flexgrid by Jon Paul Miles</h4>
 
 <p>I am preparing this framework for production and I was hoping some of you would help me test it and see if everything is working properly. If you do test it and provide feedback you are free to use this software under the <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
 
 <p><strong>Description:</strong> Flexgrid is a 12 column & 5 column responsive fluid grid system with a few extra jQuery functions that are helpful in creating layouts. Columns can be infinitely nested.</p>
-
-<h3>Flexgrid is now on jsDelivr CDN</h3>
-<h6>Attach jQuery and flexgrid.min.css and flexgrid.min.js and add the appropriate classes to your stylesheet</h6>
-
-	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.0/flexgrid.min.css">
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://cdn.jsdelivr.net/flexgrid/1.0/flexgrid.min.js"></script>
 
 
 <h3>Grid Classes</h3>
@@ -152,3 +143,15 @@ A css grid system and simple framework with some powerful jQuery helper function
 			.d-bottom 		{vertical-align: bottom;}
 			.d-float-right	{float: right;}
 			.d-float-left 	{float: left;}
+
+<h3>To apply flexgrid just add the links and then apply the correct classes</h3>
+
+	<link rel="stylesheet" type="text/css" href="flexgrid.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="flexgrid.js"></script>
+
+<h3>Flexgrid is now on jsDelivr CDN, just add these links to your html</h3>
+
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.0/flexgrid.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/flexgrid/1.0/flexgrid.min.js"></script>

@@ -141,15 +141,6 @@ $c80: 	80%;
 	}
 }
 
-/* Quick Padding classes for prototyping */
-.a-padding-0	{padding: 0;}
-.a-padding-1	{padding: 0.5em;}
-.a-padding-2	{padding: 0.75em;}
-.a-padding-3	{padding: 1em;}
-.a-padding-4	{padding: 1.25em;}
-.a-padding-5	{padding: 2em;}
-.a-padding-6	{padding: 4em;}
-
 
 /* Responsive Video and Images */
 
@@ -182,7 +173,6 @@ img {
 img.responsive {
 	display: block;
 	width: 100%;
-	margin: 0;
 }
 
 
@@ -305,7 +295,7 @@ img.responsive {
     box-sizing: border-box;
     vertical-align: top;
     margin-left: 0;
-    margin-right: -0.25em;
+    margin-right: 0;
     width: $c12;
 }
 
@@ -405,14 +395,6 @@ img.responsive {
 	.desktop-only 	{display: none;}
 	.tablet-only 	{display: none;}
 	.mobile-hide	{display: none;}
-
-	.m-padding-0	{padding: 0;}
-	.m-padding-1	{padding: 0.5em;}
-	.m-padding-2	{padding: 0.75em;}
-	.m-padding-3	{padding: 1em;}
-	.m-padding-4	{padding: 1.25em;}
-	.m-padding-5	{padding: 2em;}
-	.m-padding-6	{padding: 4em;}
 }
 
 @include media(cell) {

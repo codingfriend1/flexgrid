@@ -111,9 +111,7 @@ pre,
 address {
   margin: 0.25em 0;
   padding: 0.25em 0;
-  line-height: 1.5em;
-  font-weight: 300;
-  color: #666; }
+  line-height: 1.5em; }
 
 blockquote {
   /*background: #f9f9f9;*/
@@ -143,11 +141,6 @@ pre {
   margin: 1.5em;
   border-left: 0.5em solid #ddd;
   font-size: 0.9em;
-  background-color: #777;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
-  color: white;
-  text-shadow: 1px 1px 1px black;
   white-space: pre-wrap;
   -moz-tab-size: 3;
   -o-tab-size: 3;
@@ -159,8 +152,7 @@ address {
 table {
   width: 100%;
   margin: 0.25em;
-  border-collapse: collapse;
-  box-shadow: 1px 1px 5px #666; }
+  border-collapse: collapse; }
 
 tr:nth-child(2n) {
   background-color: #f9f9f9; }
@@ -176,11 +168,7 @@ th {
   background-color: #ddd; }
 
 figure img {
-  height: auto;
-  box-shadow: 1px 1px 5px #999;
-  padding: 0.4em;
-  border: 1px solid #999;
-  border-radius: 3px; }
+  padding: 0.4em; }
 
 ul, ol {
   margin-left: 1.1em; }
@@ -191,46 +179,20 @@ li {
 
 input,
 textarea {
-  padding: 0.5em;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1) inset; }
+  padding: 0.5em; }
 
 legend {
   position: relative;
   padding: 0.75em;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border: 1px solid #ccc; }
 
 fieldset {
-  position: absolute;
   display: inline-block;
+  position: absolute;
   top: -0.8em;
   left: 0.75em;
   padding: 0.1em 0.3em;
   background-color: #fff; }
-
-/* Quick Padding classes for prototyping */
-.a-padding-0 {
-  padding: 0; }
-
-.a-padding-1 {
-  padding: 0.5em; }
-
-.a-padding-2 {
-  padding: 0.75em; }
-
-.a-padding-3 {
-  padding: 1em; }
-
-.a-padding-4 {
-  padding: 1.25em; }
-
-.a-padding-5 {
-  padding: 2em; }
-
-.a-padding-6 {
-  padding: 4em; }
 
 /* Responsive Video and Images */
 .responsive-container {
@@ -257,8 +219,7 @@ img {
 
 img.responsive {
   display: block;
-  width: 100%;
-  margin: 0; }
+  width: 100%; }
 
 .one,
 .two,
@@ -379,7 +340,7 @@ img.responsive {
   box-sizing: border-box;
   vertical-align: top;
   margin-left: 0;
-  margin-right: -0.25em;
+  margin-right: 0;
   width: 100%; }
 
 .a-1 {
@@ -1416,28 +1377,7 @@ img.responsive {
     display: none; }
 
   .mobile-hide {
-    display: none; }
-
-  .m-padding-0 {
-    padding: 0; }
-
-  .m-padding-1 {
-    padding: 0.5em; }
-
-  .m-padding-2 {
-    padding: 0.75em; }
-
-  .m-padding-3 {
-    padding: 1em; }
-
-  .m-padding-4 {
-    padding: 1.25em; }
-
-  .m-padding-5 {
-    padding: 2em; }
-
-  .m-padding-6 {
-    padding: 4em; } }
+    display: none; } }
 /* Cell */
 @media screen and (max-width: 480px) {
   .c-1 {

@@ -100,11 +100,9 @@ h5 a,
 h6 a {
   color: inherit; }
 
-a {
-  text-decoration: none; }
+a { text-decoration: none; }
 
-a:hover {
-  text-decoration: underline; }
+a:hover { text-decoration: underline; }
 
 p,
 blockquote,
@@ -113,13 +111,13 @@ address {
   margin: 0.25em 0;
   padding: 0.25em 0;
   line-height: 1.5em;
-  font-weight: 300;
-  color: #666; }
+}
 
 blockquote {
   /*background: #f9f9f9;*/
   margin: 1em;
-  padding: 1.5em 1em 0.3em 1em; }
+  padding: 1.5em 1em 0.3em 1em; 
+}
 
 blockquote:before {
   color: rgba(0, 0, 0, 0.5);
@@ -127,7 +125,8 @@ blockquote:before {
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.1em;
-  vertical-align: -0.4em; }
+  vertical-align: -0.4em; 
+}
 
 blockquote cite {
   display: block;
@@ -144,27 +143,21 @@ pre {
   margin: 1.5em;
   border-left: 0.5em solid #ddd;
   font-size: 0.9em;
-  background-color: #777;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
-  color: white;
-  text-shadow: 1px 1px 1px black;
   white-space: pre-wrap;
   -moz-tab-size: 3;
   -o-tab-size: 3;
-  tab-size: 3; }
+  tab-size: 3; 
+}
 
-address {
-  font-size: 0.9em; }
+address { font-size: 0.9em; }
 
 table {
   width: 100%;
   margin: 0.25em;
   border-collapse: collapse;
-  box-shadow: 1px 1px 5px #666; }
+}
 
-tr:nth-child(2n) {
-  background-color: #f9f9f9; }
+tr:nth-child(2n) {background-color: #f9f9f9; }
 
 td,
 th {
@@ -176,37 +169,31 @@ th {
   border-bottom: 2px solid #666;
   background-color: #ddd; }
 
-figure img {
-  height: auto;
-  box-shadow: 1px 1px 5px #999;
-  padding: 0.4em;
-  border: 1px solid #999;
-  border-radius: 3px; }
+figure img {padding: 0.4em;}
 
-ul, ol {
-  margin-left:1.1em; }
+ul, ol {margin-left:1.1em;}
 
 li {
   padding: 0.25em;
-  margin: 0.25em; }
+  margin: 0.25em; 
+}
 
 input,
 textarea {
   padding: 0.5em;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1) inset; }
+}
 
 legend {
   position: relative;
   padding: 0.75em;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+}
 
 fieldset {
-  position: absolute;
   display: inline-block;
+  position: absolute;
   top: -0.8em;
   left: 0.75em;
   padding: 0.1em 0.3em;
-  background-color: #fff; }
+  background-color: #fff; 
+}
