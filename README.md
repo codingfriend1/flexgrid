@@ -9,6 +9,8 @@ A css grid system and simple framework with some powerful jQuery helper function
 
 <p><strong>Description:</strong> Flexgrid is a 12 column & 5 column responsive fluid grid system with a few extra jQuery functions that are helpful in creating layouts. Columns can be infinitely nested.</p>
 
+<a href="http://jonpaulmiles.info/flexgrid-inner/">Click Here</a> to see and demo and <a href="http://prezi.com/g6hegtfman6v/?utm_campaign=share&utm_medium=copy&rc=ex0share">here for a prezi slideshow</a> explaining what is does
+
 <h3>Flexgrid is now on jsDelivr CDN, just add these links to your html</h3>
 
 	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.2/flexgrid.min.css">
