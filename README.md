@@ -9,13 +9,13 @@ A css grid system and simple framework with some powerful jQuery helper function
 
 <p><strong>Description:</strong> Flexgrid is a 12 column & 5 column responsive fluid grid system with a few extra jQuery functions that are helpful in creating layouts. Columns can be infinitely nested.</p>
 
-<a href="http://jonpaulmiles.info/flexgrid-inner/">Click Here</a> to see and demo and <a href="http://prezi.com/g6hegtfman6v/?utm_campaign=share&utm_medium=copy&rc=ex0share">here for a prezi slideshow</a> explaining what is does
+<a href="http://prezi.com/g6hegtfman6v/?utm_campaign=share&utm_medium=copy&rc=ex0share">Here is a prezi slideshow</a> explaining what is does
 
 <h3>Flexgrid is now on jsDelivr CDN, just add these links to your html</h3>
 
-	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.2/flexgrid.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.5/flexgrid.min.css">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://cdn.jsdelivr.net/flexgrid/1.2/flexgrid.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/flexgrid/1.5/flexgrid.min.js"></script>
 
 
 <h3>Grid Classes</h3>
@@ -80,35 +80,12 @@ A css grid system and simple framework with some powerful jQuery helper function
 <h3>Basic jQuery helper functions:</h3>
 	
 		equalHeights()
-		measure()
-		elementOrdering()
 		responsiveVideo()
 	
 
 <dl>
 <dt>equalHeights()</dt>
 	<dd>equalHeights() is called by adding the .equal class to parents of grid containers. Every grid container on the same row that is a child of .equal will be set to the height of the tallest container on that row</dd>
-
-<dt>measure()</dt>
-	<dd>measure() returns the width of a portion of any element in either px, ems, or %. You can measure margin-box (the full width including margins), border-box, padding-box, content-box, margins (both right and left), borders, padding, margin-right, margin-left, padding-right, border-left, etc... This function is called like so
-		
-		<p>$(element).measure('border-box', '%');</p>
-			<p>returns a number without the string type added on</p>
-		
-		<p>Percentage measurements are not always very accurate, so measure() rounds the percentage returns to the nearest column width if within 0.5% tolerance as defined by an array that can be passed into the third argument.</p>
-		
-		<p>$(element).measure('border-box', '%', [33.33, 50, 66.66]);</p>
-		
-		<p>
-			If an percentage measurement turns out to be 33.29 it will round to 33.33% instead. If the % was instead to far away such as 30.25% then it will not round.</dd>
-		</p>
-
-<dt>elementOrdering()</dt>
-	<dd>Reorders elements in the page at certain screen sizes. This is achieved by adding classes to the elements.
-		Ex:
-			<p>&lt;div class="a-6 m-position-2"&gt;1&lt;/div&gt; <br>
-				&lt;div class="a-6 m-position-1"&gt;2&lt;/div&gt;</p>
-		At mobile sizes the m-position-2 will be inserted after m-position-1. Elements are only reordered within the same parent. t-position-... and d-position-... may also be specified.</dd>
 
 <dt>responsiveVideo()</dt>
 	<dd>Wraps video in a container that allows you to scale video in responsive layouts</dd>

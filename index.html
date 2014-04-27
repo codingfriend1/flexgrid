@@ -1,12 +1,17 @@
 <html>
 <head>
 	<title>Flexgrid</title>
-	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.2/flexgrid.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="flexgrid.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/flexgrid/1.4.1/flexgrid.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="flexgrid.css"> -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic|Bitter' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://cdn.jsdelivr.net/flexgrid/1.2/flexgrid.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic|Bitter' rel='stylesheet' type='text/css'>
+	<script src="http://cdn.jsdelivr.net/flexgrid/1.4.1/flexgrid.min.js"></script>
+
+	<style type="text/css">
+		
+	</style>
 </head>
 <body>
 	<div class="wrapper equal">
@@ -21,6 +26,8 @@
 	<p>m = mobile</p>
 	<p>c = cell</p>
 	<p>words = desktop and tablet</p>
+
+	<div id="test" class="six">Six</div>
 
 <h3>Grid Classes</h3>
 <div class="a-2">
@@ -301,7 +308,7 @@
 </div>	
 
 <div class="a-2">
-	<div class="borderless">a-20</div>
+	<div class="borderless">a-2 fg0</div>
 </div>	
 
 <div class="a-2">
@@ -444,7 +451,8 @@
 	<p>All grid classes can be overriden by more specific screen sizes. "a-6  t-4" will be 6 columns on all screen sizes except tablets, in which it would convert to 4 columns. </p>
 	<p>Wordnumbers apply to desktop and tablet sizes. Ex: .six, .four, .five</p> 
 	<p>Try resizing the screen to see how the grid containers adapt</p>
-			</ul>
+
+	<div class="twelve"></div>
 			<h3 class="desktop-only">Desktop Screens (.desktop-only)</h3>
 			<h3 class="tablet-only">Tablet Screens (.tablet-only)</h3>
 			<h3 class="mobile-only">Mobile Screens (.mobile-only)</h3>
@@ -455,6 +463,7 @@
 				</article>
 				<article class="six">
 					<div class="inner">
+						<p class="d-size t-size">.six</p>
 						<p class="d-size t-size">.six</p>
 					</div>
 				</article>
@@ -590,83 +599,60 @@
 
 			<h2>Grid containers can be infinitely nested</h2>
 				<article class="six border-black">
-					<div class="inner">
-						<p class="d-size t-size">.six</p>
-						<div class="a-6 border-black">
-							<div class="inner">
-								<p class="a-size">.a-6</p>
+						<div class="inner">
+							<p class="d-size t-size">.six</p>
+							<div class="a-6 border-black">
+								<div class="inner">
+									<p class="a-size">.a-6</p>
+								</div>
+							</div>
+							<div class="a-6 border-black">
+								<div class="inner">
+									<p class="a-size">.a-6</p>
+								</div>
+							</div>
+							
+							<div class="a-4 border-black">
+								<div class="inner">
+									<p class="a-size">.a-4</p>
+								</div>
+							</div>
+							<div class="a-4 border-black">
+								<div class="inner">
+									<p class="a-size">.a-4</p>
+								</div>
+							</div>
+							<div class="a-4 border-black">
+								<div class="inner">
+									<p class="a-size">.a-4</p>
+								</div>
 							</div>
 						</div>
-						<div class="a-6 border-black">
-							<div class="inner">
-								<p class="a-size">.a-6</p>
-							</div>
-						</div>
-						
-						<div class="a-4 border-black">
-							<div class="inner">
-								<p class="a-size">.a-4</p>
-							</div>
-						</div>
-						<div class="a-4 border-black">
-							<div class="inner">
-								<p class="a-size">.a-4</p>
-							</div>
-						</div>
-						<div class="a-4 border-black">
-							<div class="inner">
-								<p class="a-size">.a-4</p>
-							</div>
-						</div>
-					</div>
 				</article>
 				<article class="six border-black">
-					<div class="inner equal">
-						<p class="d-size t-size">.six</p>
-						<div class="a-4 border-black">
-							<div class="inner">
-								<p class="a-size">.a-4</p>
+						<div class="inner">
+							<p class="d-size t-size">.six</p>
+							<div class="a-4 border-black">
+								<div class="inner">
+									<p class="a-size">.a-4</p>
+								</div>
+							</div>
+							<div class="a-4 border-black">
+								<div class="inner">
+									<p class="a-size">.a-4</p>
+								</div>
+							</div>
+							<div class="a-4 border-black">
+								<div class="inner">
+									<p class="a-size">.a-4</p>
+								</div>
+							</div>
+							<div class="a-12 border-black">
+								<div class="inner">
+									<p class="a-size">.a-12</p>
+								</div>
 							</div>
 						</div>
-						<div class="a-4 border-black">
-							<div class="inner">
-								<p class="a-size">.a-4</p>
-							</div>
-						</div>
-						<div class="a-4 border-black">
-							<div class="inner">
-								<p class="a-size">.a-4</p>
-							</div>
-						</div>
-						<div class="a-12 border-black">
-							<div class="inner">
-								<p class="a-size">.a-12</p>
-							</div>
-						</div>
-					</div>
-				</article>
-
-			<h2>Elements can be reordered at different screen sizes by applying a couple classes.</h2>
-				<article class="four t-position-2 m-position-3">
-					<div class="inner">
-						<p class="a-size">1</p>
-						<p class="t-size">.t-position-2</p>
-						<p class="m-size">.m-position-3</p>
-					</div>
-				</article>
-				<article class="four t-position-3 m-position-1">
-					<div class="inner">
-						<p class="a-size">2</p>
-						<p class="t-size">.t-position-3</p>
-						<p class="m-size">.m-position-1</p>
-					</div>
-				</article>
-				<article class="four t-position-1 m-position-2">
-					<div class="inner">
-						<p class="a-size">3</p>
-						<p class="t-size">.t-position-1</p>
-						<p class="m-size">.m-position-2</p>
-					</div>
 				</article>
 			<h2>Apply the .equal class to the parent of any set of flexgrid containers, and each container on the same row will have equal heights</h2>
 				<h3>Before:</h3>
@@ -725,11 +711,24 @@
 					</article>
 				</div>
 		<h3>Two more jQuery features worth noting...</h3>
-		<p>html inside of pre tags will be visible as is if a .show-html class is added to the pre tags.</p>
+		<p>Html inside of pre tags will be visible if a .show-html class is added to the pre tags.</p>
 		<pre class="show-html">
 			<div class="hello">This content did not have character entities.</div>
 		</pre>
 		<p>Also, video from youtube or vimeo automatically becomes responsive through jquery.</p>
+		<div class="twelve">
+			<div class="inner">
+				<div class="responsive-container">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/0IrWRuEyXYA" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
 	</div>
+	<!--<script src="flexgrid.javascript.js"></script>-->
 </body>
 </html>
+
+
+
+
+
