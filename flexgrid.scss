@@ -257,6 +257,7 @@ $c80: 	80%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin-left: 0 !important;
     margin-right: -0.25em !important;
     vertical-align: top;
     width: $c12;
@@ -376,6 +377,10 @@ $c80: 	80%;
 .js .a-80,
 .js .fg {
 	margin-right: 0 !important;
+}
+
+.inner {
+	box-sizing: border-box;
 }
 
 

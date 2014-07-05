@@ -23,7 +23,27 @@ utils.clean = function(node) {
 
 // Sets grid containers on the same row to equal heights dynamically and responsively
 function equalheights() {
-    var el, height, marginTop, marginBottom, verticalMargins, tallest = -1, onSameRow = new Array(), onSameRowLength, combinedWidth = 0, equalParentWidth, parentHeight, parentPaddingTop, parentPaddingBottom, verticalPadding, i=0, x=0, y=0, equalChildrenLength = equalChildren.length, innerChildrenLength = innerChildren.length;
+    var el, 
+        height,
+        marginTop,
+        marginBottom,
+        verticalMargins,
+        tallest = -1,
+        onSameRow = new Array(),
+        onSameRowLength,
+        combinedWidth = 0,
+        equalParentWidth,
+        parentHeight,
+        parentPaddingTop,
+        parentPaddingBottom,
+        parentPaddingRight,
+        parentPaddingLeft,
+        verticalPadding,
+        i=0,
+        x=0,
+        y=0,
+        equalChildrenLength = equalChildren.length,
+        innerChildrenLength = innerChildren.length;
 
     while(i < equalChildrenLength) {
         while (x < equalChildren[i].length) {
@@ -44,9 +64,9 @@ function equalheights() {
     	onSameRowLength = onSameRow.length;
         // console.log('elementHeight: ' + onSameRow[i].offsetHeight + ' tallest: ' + tallest);
     	while(i < onSameRowLength) {
-    		if(onSameRow[i].offsetHeight != tallest) {
+    		// if(onSameRow[i].offsetHeight != tallest) {
     			onSameRow[i].style.height = tallest + 'px';
-    		}
+    		// }
     		i++;
     	}    
         tallest = -1; //Reset Height for next row
@@ -64,7 +84,10 @@ function equalheights() {
     while(y < equalChildrenLength) {
         while (x < equalChildren[y].length) {
             el = equalChildren[y][x];
-            equalParentWidth = parseInt(el.parentNode.scrollWidth);
+            equalParentWidth = parseInt(el.parentNode.clientWidth);
+            parentPaddingRight = parseInt(getComputedStyle(el.parentNode).getPropertyValue('padding-right'));
+            parentPaddingLeft = parseInt(getComputedStyle(el.parentNode).getPropertyValue('padding-left'));
+            equalParentWidth = equalParentWidth - parentPaddingRight - parentPaddingLeft;
             combinedWidth = combinedWidth + el.offsetWidth;
             if(combinedWidth >= (equalParentWidth - 20) && combinedWidth < (equalParentWidth + 20)) { //New Row
                 addToSameRow();
