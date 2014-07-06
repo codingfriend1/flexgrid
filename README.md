@@ -77,7 +77,7 @@ A css grid system and simple framework with some powerful jQuery helper function
 	</p>
 
 
-<h3>Basic jQuery helper functions:</h3>
+<h3>Basic jQuery helper functions: (They run automatically)</h3>
 	
 		equalHeights()
 		responsiveVideo()
