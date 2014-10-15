@@ -11,7 +11,7 @@ utils.clean = function(node) {
     for (i = len; i > 0; i -= 1) {
         child = node.childNodes[i - 1];
         // comment node? or empty text node
-        if (child.nodeType === 8 || (child.nodeType === 3 && !/\S/.test(child.nodeValue) )) {
+        if (child.nodeType === 3 && !/\S/.test(child.nodeValue)) {
             node.removeChild(child);
         } else {
             if (child.nodeType === 1) {
@@ -150,8 +150,7 @@ function responsiveVideo(container) {
 
 
 jQuery(document).ready(function() {
-    // console.time('startup');
-    jQuery('body').addClass('js');
+
     var i = 0, x = 0;
     equalParent = document.getElementsByClassName('equal');
     var gridClasses = new RegExp(/([adtmhc]-[0-9]{1,2})|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|fourty|sixty|eighty|fg/);
@@ -170,7 +169,6 @@ jQuery(document).ready(function() {
     }
     i = 0;
     innerChildren = document.getElementsByClassName('inner');
-    utils.clean(document.body);
     wrapVideo(videoTypes);
     responsiveVideo('.responsive-container');
     equalheights();    
@@ -179,6 +177,8 @@ jQuery(document).ready(function() {
         var preHTML = jQuery(this).html();
         jQuery(this).text(preHTML);
     });
+    jQuery('body').addClass('js');
+    utils.clean(document.body);
     // console.timeEnd('startup');
 });
 
